@@ -42,8 +42,8 @@ export default function Hero() {
           {/* Right Image */}
           <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
-              alt="Peaceful moment looking out over calm ocean view"
+              src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&h=1000&fit=crop"
+              alt="Person in peaceful moment of reflection by the window"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
               className="object-cover"

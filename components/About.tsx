@@ -8,8 +8,8 @@ export default function About() {
           {/* Image */}
           <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=1000&fit=crop"
-              alt="Peaceful mountain landscape representing calm and clarity"
+              src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&h=1000&fit=crop"
+              alt="Peaceful moment of self-reflection and mindfulness"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
