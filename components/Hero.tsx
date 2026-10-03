@@ -45,6 +45,7 @@ export default function Hero() {
               src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop"
               alt="Dr. Maya Reynolds - Licensed Clinical Psychologist"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
               className="object-cover"
               priority
             />

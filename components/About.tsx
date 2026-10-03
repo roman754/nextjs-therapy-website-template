@@ -11,6 +11,7 @@ export default function About() {
               src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=1000&fit=crop"
               alt="Calm therapy environment"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </div>

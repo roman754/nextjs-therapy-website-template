@@ -23,6 +23,7 @@ export default function Office() {
               src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800&h=1000&fit=crop"
               alt="Comfortable therapy office waiting area with natural lighting"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -90,6 +91,7 @@ export default function Office() {
               src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&h=600&fit=crop"
               alt="Peaceful therapy session room"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
@@ -98,6 +100,7 @@ export default function Office() {
               src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop"
               alt="Comfortable seating area in therapy office"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
