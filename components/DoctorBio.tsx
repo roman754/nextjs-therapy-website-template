@@ -4,19 +4,18 @@ export default function DoctorBio() {
   return (
     <section id="bio" className="py-20 lg:py-28 bg-white border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-12 items-start">
+        <div className="flex flex-col md:flex-row gap-12 items-center md:items-start">
           {/* Doctor Photo */}
           <div className="md:w-1/3 flex-shrink-0">
-            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto rounded-2xl overflow-hidden shadow-xl bg-gray-100">
-              <Image
-                src="/images/dr-maya-reynolds.jpg"
-                alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist"
-                fill
-                sizes="(max-width: 768px) 100vw, 300px"
-                className="object-cover rounded-2xl"
-                priority
-              />
-            </div>
+            <Image
+              src="/images/dr-maya-reynolds.jpg"
+              alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist"
+              width={300}
+              height={400}
+              style={{ width: 'auto', height: 'auto', maxWidth: '100%' }}
+              className="rounded-2xl shadow-xl"
+              priority
+            />
           </div>
 
           {/* Bio Content */}

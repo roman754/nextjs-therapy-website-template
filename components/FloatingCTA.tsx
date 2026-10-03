@@ -26,11 +26,10 @@ export default function FloatingCTA() {
       {isVisible && (
         <Link
           href="#contact"
-          className="fixed bottom-8 right-8 z-50 px-6 py-4 rounded-full text-white font-medium shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-3xl flex items-center gap-2 animate-bounce"
+          className="fixed bottom-8 right-8 z-[9999] px-6 py-4 rounded-full text-white font-medium shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-3xl flex items-center gap-2 animate-slideInUp"
           style={{ backgroundColor: 'var(--primary)' }}
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = 'var(--primary-dark)';
-            e.currentTarget.classList.remove('animate-bounce');
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.backgroundColor = 'var(--primary)';
