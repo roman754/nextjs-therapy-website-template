@@ -42,8 +42,8 @@ export default function Hero() {
           {/* Right Image */}
           <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop"
-              alt="Dr. Maya Reynolds - Licensed Clinical Psychologist"
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
+              alt="Peaceful moment looking out over calm ocean view"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
               className="object-cover"

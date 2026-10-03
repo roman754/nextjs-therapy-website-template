@@ -7,13 +7,13 @@ export default function DoctorBio() {
         <div className="flex flex-col md:flex-row gap-12 items-start">
           {/* Doctor Photo */}
           <div className="md:w-1/3 flex-shrink-0">
-            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto rounded-2xl overflow-hidden shadow-xl bg-gray-100">
               <Image
                 src="/images/dr-maya-reynolds.jpg"
                 alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist"
                 fill
                 sizes="(max-width: 768px) 100vw, 300px"
-                className="object-cover"
+                className="object-contain"
                 priority
               />
             </div>

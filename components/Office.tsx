@@ -20,8 +20,8 @@ export default function Office() {
           {/* Left Image */}
           <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800&h=1000&fit=crop"
-              alt="Comfortable therapy office waiting area with natural lighting"
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=1000&fit=crop"
+              alt="Warm and inviting therapy office with natural wood and comfortable seating"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -88,8 +88,8 @@ export default function Office() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="relative h-[300px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&h=600&fit=crop"
-              alt="Peaceful therapy session room"
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=600&fit=crop"
+              alt="Cozy therapy room with comfortable seating and warm natural light"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
@@ -97,8 +97,8 @@ export default function Office() {
           </div>
           <div className="relative h-[300px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop"
-              alt="Comfortable seating area in therapy office"
+              src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop"
+              alt="Peaceful office space with plants and natural elements"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
