@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold" style={{ color: 'var(--primary)' }}>
+            <Link href="#bio" className="text-2xl font-bold transition-colors hover:opacity-80" style={{ color: 'var(--primary)' }}>
               Dr. Maya Reynolds
             </Link>
           </div>

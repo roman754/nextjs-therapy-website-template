@@ -2,22 +2,26 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section id="about" className="py-20 lg:py-28 bg-white">
+    <section id="about" className="py-20 lg:py-28 bg-white relative overflow-hidden">
+      {/* Subtle divider line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
-          <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl fade-in">
             <Image
               src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&h=1000&fit=crop"
               alt="Peaceful moment of self-reflection and mindfulness"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
+              loading="lazy"
             />
           </div>
 
           {/* Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 fade-in-delay-1">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
               You don&apos;t have to navigate this alone
             </h2>
@@ -65,6 +69,9 @@ export default function About() {
           </div>
         </div>
       </div>
+      
+      {/* Subtle divider line at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
     </section>
   );
 }

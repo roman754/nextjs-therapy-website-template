@@ -4,7 +4,7 @@ export default function Services() {
       title: 'Anxiety & Panic Therapy',
       description: 'If you struggle with constant worry, overthinking, or panic attacks, therapy can help you understand the root causes and develop practical tools to regain control. I use evidence-based approaches like CBT, EMDR, and mindfulness to help you find relief and build lasting resilience.',
       icon: (
-        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
         </svg>
       ),
@@ -13,7 +13,7 @@ export default function Services() {
       title: 'Trauma & EMDR Therapy',
       description: 'Trauma doesn\'t always look the way people expect. Whether from childhood experiences, relationships, or single events, unprocessed trauma can affect your sense of safety and self. I help clients process past experiences using EMDR and trauma-informed approaches, focusing on stabilization and healing at your own pace.',
       icon: (
-        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
       ),
@@ -22,7 +22,7 @@ export default function Services() {
       title: 'Burnout & Stress Management',
       description: 'High achievers often feel pressure to keep pushing, even when exhausted. I work with entrepreneurs, creatives, and professionals experiencing burnout, perfectionism, and disconnection. Therapy helps you slow down, reconnect, and develop sustainable ways of living and working without constant stress.',
       icon: (
-        <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
@@ -30,10 +30,14 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 lg:py-28 bg-[var(--bg-cream)]">
+    <section id="services" className="py-20 lg:py-28 bg-[var(--bg-cream)] relative overflow-hidden">
+      {/* Decorative floating shapes */}
+      <div className="absolute top-20 right-10 w-32 h-32 rounded-full opacity-5 floating-shape" style={{ backgroundColor: 'var(--primary)' }}></div>
+      <div className="absolute bottom-20 left-10 w-24 h-24 rounded-full opacity-5 floating-shape" style={{ backgroundColor: 'var(--secondary)', animationDelay: '1s' }}></div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 fade-in">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             How I Can Help
           </h2>
@@ -48,24 +52,30 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className={`bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer fade-in-delay-${index + 1}`}
             >
-              <div className="mb-6" style={{ color: 'var(--primary)' }}>
+              <div className="mb-6 transform transition-transform duration-300 hover:scale-110" style={{ color: 'var(--primary)' }}>
                 {service.icon}
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 {service.description}
               </p>
+              <div className="text-[var(--primary)] font-medium flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                Learn More
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
             </div>
           ))}
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-white px-8 py-6 rounded-2xl shadow-md">
+        <div className="mt-16 text-center fade-in">
+          <div className="inline-block bg-white px-8 py-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
             <p className="text-lg font-semibold text-gray-900 mb-2">
               All sessions are confidential and tailored to your unique needs
             </p>

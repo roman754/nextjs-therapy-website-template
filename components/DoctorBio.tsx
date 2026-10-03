@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function DoctorBio() {
   return (
-    <section className="py-20 lg:py-28 bg-white border-b border-gray-100">
+    <section id="bio" className="py-20 lg:py-28 bg-white border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 items-start">
           {/* Doctor Photo */}
@@ -13,7 +13,7 @@ export default function DoctorBio() {
                 alt="Dr. Maya Reynolds, PsyD - Licensed Clinical Psychologist"
                 fill
                 sizes="(max-width: 768px) 100vw, 300px"
-                className="object-contain"
+                className="object-cover rounded-2xl"
                 priority
               />
             </div>

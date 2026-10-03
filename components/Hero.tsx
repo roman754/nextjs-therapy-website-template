@@ -4,10 +4,15 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section className="relative bg-[var(--bg-cream)] overflow-hidden">
+      {/* Decorative floating shapes */}
+      <div className="absolute top-20 right-10 w-40 h-40 rounded-full opacity-10 floating-shape" style={{ backgroundColor: 'var(--secondary)' }}></div>
+      <div className="absolute bottom-20 left-10 w-32 h-32 rounded-full opacity-10 floating-shape" style={{ backgroundColor: 'var(--primary)', animationDelay: '2s' }}></div>
+      <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full opacity-5 floating-shape" style={{ backgroundColor: 'var(--accent)', animationDelay: '1s' }}></div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
               Therapy for Anxiety, Trauma & Burnout in{' '}
               <span style={{ color: 'var(--primary)' }}>Santa Monica</span>
@@ -19,14 +24,14 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
                 href="#contact"
-                className="px-8 py-4 rounded-full text-white text-lg font-medium text-center transition-all hover:shadow-lg"
+                className="px-8 py-4 rounded-full text-white text-lg font-medium text-center transition-all hover:shadow-lg hover:scale-105"
                 style={{ backgroundColor: 'var(--primary)' }}
               >
                 Schedule Consultation
               </Link>
               <Link
                 href="#about"
-                className="px-8 py-4 rounded-full text-[var(--primary)] text-lg font-medium text-center border-2 transition-all hover:bg-[var(--primary)] hover:text-white"
+                className="px-8 py-4 rounded-full text-[var(--primary)] text-lg font-medium text-center border-2 transition-all hover:bg-[var(--primary)] hover:text-white hover:scale-105"
                 style={{ borderColor: 'var(--primary)' }}
               >
                 Learn More
@@ -40,7 +45,7 @@ export default function Hero() {
           </div>
 
           {/* Right Image */}
-          <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl fade-in-delay-1">
             <Image
               src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&h=1000&fit=crop"
               alt="Person in peaceful moment of reflection by the window"
@@ -52,10 +57,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Decorative Elements */}
-      <div className="absolute top-20 right-10 w-32 h-32 rounded-full opacity-10" style={{ backgroundColor: 'var(--secondary)' }}></div>
-      <div className="absolute bottom-20 left-10 w-24 h-24 rounded-full opacity-10" style={{ backgroundColor: 'var(--primary)' }}></div>
     </section>
   );
 }
