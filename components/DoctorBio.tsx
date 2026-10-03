@@ -36,7 +36,7 @@ export default function DoctorBio() {
               </p>
               
               <p>
-                Many of the people I work with are high-achieving, thoughtful, and self-aware—but internally 
+                Many of the people I work with are high-achieving, thoughtful, and self-aware - but internally 
                 feel exhausted, stuck in overthinking, or emotionally on edge. They come to me feeling "functional" 
                 on the outside while quietly struggling with constant worry, tension in their body, difficulty 
                 sleeping, or a sense that they&apos;re always bracing for something to go wrong.

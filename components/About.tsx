@@ -26,19 +26,19 @@ export default function About() {
               You don&apos;t have to navigate this alone
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I&apos;m Dr. Maya Reynolds, a licensed clinical psychologist based in Santa Monica, California. 
-              I work with adults who feel overwhelmed by anxiety, stress, or the lingering effects of past experiences.
+              Therapy is a space to slow down, make sense of what you&apos;re feeling, and reconnect with 
+              yourself. Whether you&apos;re navigating anxiety, processing past experiences, or feeling stuck 
+              in patterns that no longer serve you, I&apos;m here to help you find your way forward.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Many of my clients are high-achieving, thoughtful, and self-aware—but internally feel exhausted, 
-              stuck in overthinking, or emotionally on edge. They come to me feeling "functional" on the outside 
-              while quietly struggling with constant worry, tension, difficulty sleeping, or a sense that they&apos;re 
-              always bracing for something to go wrong.
+              My approach is warm, collaborative, and grounded in evidence-based methods like CBT, EMDR, and 
+              mindfulness. I believe healing happens in relationship, and my goal is to create a space where 
+              you feel truly seen, understood, and supported.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              My work focuses on anxiety, panic, trauma, and burnout. I also frequently support clients dealing 
-              with professional burnout, perfectionism, and high internal pressure—especially entrepreneurs, 
-              creatives, and professionals who feel disconnected after years of pushing through stress.
+              I work with adults in Santa Monica and throughout California via telehealth. Sessions are available 
+              in person at my Santa Monica office or online, with flexible scheduling including evening appointments 
+              to fit your life.
             </p>
             <div className="pt-6 space-y-4">
               <div className="flex items-start gap-3">

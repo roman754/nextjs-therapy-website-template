@@ -32,7 +32,7 @@ export default function Approach() {
                 Trauma work is an important part of my practice. I work with adults who have experienced 
                 single-incident trauma as well as more complex, long-standing patterns from childhood, 
                 relationships, or chronic stress. My approach is paced carefully, with an emphasis on safety, 
-                stabilization, and helping you feel more regulated in your daily life—not just during sessions.
+                stabilization, and helping you feel more regulated in your daily life - not just during sessions.
               </p>
             </div>
 
